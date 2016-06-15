@@ -17,34 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNZ-Ek-aqK">
-                                <rect key="frame" x="279" y="285" width="42" height="30"/>
-                                <state key="normal" title="Count"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulQ-er-odq">
+                                <rect key="frame" x="253" y="285" width="94" height="30"/>
+                                <state key="normal" title="Change Color"/>
                                 <connections>
-                                    <action selector="btnCountClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Od2-uK-eL1"/>
+                                    <action selector="changeColorBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eN-OI-pAa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7V-52-yd2">
-                                <rect key="frame" x="295" y="178" width="11" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Green Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-M6-GPZ">
+                                <rect key="frame" x="241" y="198" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f7V-52-yd2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="158" id="6lk-kl-zww"/>
-                            <constraint firstItem="bNZ-Ek-aqK" firstAttribute="top" secondItem="f7V-52-yd2" secondAttribute="bottom" constant="86" id="7Js-4b-s2l"/>
-                            <constraint firstItem="f7V-52-yd2" firstAttribute="centerX" secondItem="bNZ-Ek-aqK" secondAttribute="centerX" id="RwW-Gr-mj8"/>
-                            <constraint firstItem="f7V-52-yd2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jxr-Pk-Tyg"/>
+                            <constraint firstItem="YW0-M6-GPZ" firstAttribute="centerX" secondItem="ulQ-er-odq" secondAttribute="centerX" id="9P7-2p-7Ni"/>
+                            <constraint firstItem="ulQ-er-odq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mfa-Fh-qbz"/>
+                            <constraint firstItem="ulQ-er-odq" firstAttribute="top" secondItem="YW0-M6-GPZ" secondAttribute="bottom" constant="66" id="TSW-eZ-jAI"/>
+                            <constraint firstItem="ulQ-er-odq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hxT-q6-cH1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblCount" destination="f7V-52-yd2" id="H0V-UV-uLX"/>
+                        <outlet property="lblColor" destination="YW0-M6-GPZ" id="Pmz-F4-AYA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="580" y="401"/>
         </scene>
     </scenes>
 </document>

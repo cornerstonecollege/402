@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftExploring2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red: Green: Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f15-1k-bia">
+                                <rect key="frame" x="236" y="217" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-Fh-9kY">
+                                <rect key="frame" x="253" y="285" width="94" height="30"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="colorBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EA9-aA-1ng"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hex Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-pI-m41">
+                                <rect key="frame" x="262" y="256" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dzb-pI-m41" firstAttribute="centerX" secondItem="ywI-Fh-9kY" secondAttribute="centerX" id="Ecg-Q0-xNp"/>
+                            <constraint firstItem="ywI-Fh-9kY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HXB-em-wRq"/>
+                            <constraint firstItem="dzb-pI-m41" firstAttribute="top" secondItem="f15-1k-bia" secondAttribute="bottom" constant="18" id="Lzy-cm-g8G"/>
+                            <constraint firstItem="f15-1k-bia" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z42-C4-Sz2"/>
+                            <constraint firstItem="ywI-Fh-9kY" firstAttribute="top" secondItem="dzb-pI-m41" secondAttribute="bottom" constant="8" symbolic="YES" id="ZU9-0X-uoV"/>
+                            <constraint firstItem="f15-1k-bia" firstAttribute="centerX" secondItem="dzb-pI-m41" secondAttribute="centerX" id="gsI-80-Y0l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hexLabel" destination="dzb-pI-m41" id="jUy-FB-20Q"/>
+                        <outlet property="lblColor" destination="f15-1k-bia" id="pvX-Yx-4GV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
