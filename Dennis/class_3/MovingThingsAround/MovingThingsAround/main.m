@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Calculator
+//  MovingThingsAround
 //
-//  Created by Dennis Pham on 2016-06-16.
+//  Created by Dennis Pham on 2016-06-15.
 //  Copyright © 2016 Dennis Pham. All rights reserved.
 //
 
