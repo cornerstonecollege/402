@@ -8,6 +8,12 @@
 
 #import "SpeechBubble.h"
 
+@interface SpeechBubble ()
+
+@property (nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation SpeechBubble
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -16,6 +22,13 @@
     if (self)
     {
         self.backgroundColor = [UIColor clearColor];
+        self.circleColor = [UIColor greenColor];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        [self addGestureRecognizer:tapGesture];
+        
+        UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
+        [self addGestureRecognizer:pinchGesture];
     }
     
     return self;
@@ -30,8 +43,8 @@
     [path addArcWithCenter:center radius:self.frame.size.width / 2 - 10 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     
     path.lineWidth = 10;
-    [[UIColor greenColor] setStroke];
-    [[UIColor greenColor] setFill];
+    [self.circleColor setStroke];
+    [self.circleColor setFill];
     [path fill];
     [path stroke];
     
@@ -44,6 +57,21 @@
     
     [path closePath];
     [path fill];
+}
+
+- (void) handleTap:(UITapGestureRecognizer *)tapGesture
+{
+    self.circleColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+    [self setNeedsDisplay];
+}
+
+- (void) handlePinch:(UIPinchGestureRecognizer *)pinchGesture
+{
+    if (pinchGesture.scale < 0.5 || pinchGesture.scale > 1.5)
+        return;
+    
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width * pinchGesture.scale, self.frame.size.height * pinchGesture.scale);
+    [self setNeedsDisplay];
 }
 
 @end
