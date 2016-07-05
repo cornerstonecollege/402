@@ -43,9 +43,11 @@
     return [[TableViewController getPokedexInfo]  count];
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [TableViewController getOrSetCurrentIndex:[NSNumber numberWithInteger:indexPath.row]];
+    
+    return indexPath;
 }
 
 + (NSDictionary *) getPokedexInfo
