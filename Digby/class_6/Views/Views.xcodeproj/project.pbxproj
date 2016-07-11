@@ -13,6 +13,7 @@
 		8009A42E1D18546000DF0DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8009A42C1D18546000DF0DC1 /* Main.storyboard */; };
 		8009A4301D18546000DF0DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8009A42F1D18546000DF0DC1 /* Assets.xcassets */; };
 		8009A4331D18546000DF0DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8009A4311D18546000DF0DC1 /* LaunchScreen.storyboard */; };
+		8009A43C1D1858DE00DF0DC1 /* SpeechBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 8009A43B1D1858DE00DF0DC1 /* SpeechBubble.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		8009A42F1D18546000DF0DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8009A4321D18546000DF0DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8009A4341D18546000DF0DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8009A43A1D1858DE00DF0DC1 /* SpeechBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechBubble.h; sourceTree = "<group>"; };
+		8009A43B1D1858DE00DF0DC1 /* SpeechBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechBubble.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				8009A4271D18546000DF0DC1 /* AppDelegate.m */,
 				8009A4291D18546000DF0DC1 /* ViewController.h */,
 				8009A42A1D18546000DF0DC1 /* ViewController.m */,
+				8009A43A1D1858DE00DF0DC1 /* SpeechBubble.h */,
+				8009A43B1D1858DE00DF0DC1 /* SpeechBubble.m */,
 				8009A42C1D18546000DF0DC1 /* Main.storyboard */,
 				8009A42F1D18546000DF0DC1 /* Assets.xcassets */,
 				8009A4311D18546000DF0DC1 /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8009A42B1D18546000DF0DC1 /* ViewController.m in Sources */,
+				8009A43C1D1858DE00DF0DC1 /* SpeechBubble.m in Sources */,
 				8009A4281D18546000DF0DC1 /* AppDelegate.m in Sources */,
 				8009A4251D18545F00DF0DC1 /* main.m in Sources */,
 			);

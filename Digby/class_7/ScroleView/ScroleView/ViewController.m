@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Circle.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Circle *triangle = [[Circle alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 2, self.view.frame.size.height * 2)];
+    triangle.backgroundColor = [UIColor blueColor];
+    //triangle.center = self.view.center;
+    //self.view addSubview:triangle];
+
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    scrollView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:scrollView];
+    scrollView.contentSize = triangle.frame.size;
+    
+    [scrollView addSubview:triangle];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

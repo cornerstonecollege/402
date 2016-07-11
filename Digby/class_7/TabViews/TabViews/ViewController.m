@@ -14,9 +14,22 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+
+- (instancetype) init
+{
+    self = [super init];
+    if (self)
+    {
+        self.title = @"blah2";
+        self.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemSearch tag:2];
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning {

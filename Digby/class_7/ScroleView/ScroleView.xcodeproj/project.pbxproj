@@ -13,6 +13,7 @@
 		8050C3481D19B028003446AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8050C3461D19B028003446AC /* Main.storyboard */; };
 		8050C34A1D19B028003446AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8050C3491D19B028003446AC /* Assets.xcassets */; };
 		8050C34D1D19B028003446AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8050C34B1D19B028003446AC /* LaunchScreen.storyboard */; };
+		8050C3561D19B07A003446AC /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8050C3551D19B07A003446AC /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		8050C3491D19B028003446AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8050C34C1D19B028003446AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8050C34E1D19B028003446AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8050C3541D19B07A003446AC /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		8050C3551D19B07A003446AC /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		8050C33C1D19B028003446AC /* ScroleView */ = {
 			isa = PBXGroup;
 			children = (
+				8050C3541D19B07A003446AC /* Circle.h */,
+				8050C3551D19B07A003446AC /* Circle.m */,
 				8050C3401D19B028003446AC /* AppDelegate.h */,
 				8050C3411D19B028003446AC /* AppDelegate.m */,
 				8050C3431D19B028003446AC /* ViewController.h */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8050C3451D19B028003446AC /* ViewController.m in Sources */,
+				8050C3561D19B07A003446AC /* Circle.m in Sources */,
 				8050C3421D19B028003446AC /* AppDelegate.m in Sources */,
 				8050C33F1D19B028003446AC /* main.m in Sources */,
 			);

@@ -10,12 +10,26 @@
 
 @implementation Circle
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
 }
-*/
+
+- (void)drawRect:(CGRect)rect
+{
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(0, self.frame.size.height)];
+    [path addLineToPoint:CGPointMake(self.frame.size.width / 2 , 0)];
+    [path addLineToPoint:CGPointMake(self.frame.size.width, self.frame.size.height)];
+    [path addLineToPoint:CGPointMake(0, self.frame.size.height)];
+    
+    [[UIColor yellowColor] setFill];
+    [path fill];
+}
 
 @end

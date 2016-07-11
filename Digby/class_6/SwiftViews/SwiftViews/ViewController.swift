@@ -10,14 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let myFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let speechBubble = SwiftSpeechBubble(frame: myFrame)
+        //speechBubble.backgroundColor = UIColor.redColor()
+        self.view.addSubview(speechBubble)
+        speechBubble.center = view.center
+        
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
