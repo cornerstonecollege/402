@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8008A5461D34199100034B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A5451D34199100034B3A /* AppDelegate.swift */; };
+		8008A5481D34199100034B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A5471D34199100034B3A /* ViewController.swift */; };
+		8008A54B1D34199200034B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008A5491D34199200034B3A /* Main.storyboard */; };
+		8008A54D1D34199200034B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8008A54C1D34199200034B3A /* Assets.xcassets */; };
+		8008A5501D34199200034B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8008A54E1D34199200034B3A /* LaunchScreen.storyboard */; };
+		8008A5581D3421CD00034B3A /* MagnetometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A5571D3421CD00034B3A /* MagnetometerController.swift */; };
+		8008A55A1D34227B00034B3A /* GyroscopeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A5591D34227B00034B3A /* GyroscopeController.swift */; };
+		8008A55C1D3422B300034B3A /* AccelerometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A55B1D3422B300034B3A /* AccelerometerController.swift */; };
+		8008A55E1D34247C00034B3A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8008A55D1D34247C00034B3A /* CoreMotion.framework */; };
+		8008A5601D34273A00034B3A /* coreMotionHadeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008A55F1D34273A00034B3A /* coreMotionHadeler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8008A5421D34199100034B3A /* Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8008A5451D34199100034B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8008A5471D34199100034B3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8008A54A1D34199200034B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8008A54C1D34199200034B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8008A54F1D34199200034B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8008A5511D34199200034B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8008A5571D3421CD00034B3A /* MagnetometerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnetometerController.swift; sourceTree = "<group>"; };
+		8008A5591D34227B00034B3A /* GyroscopeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeController.swift; sourceTree = "<group>"; };
+		8008A55B1D3422B300034B3A /* AccelerometerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerController.swift; sourceTree = "<group>"; };
+		8008A55D1D34247C00034B3A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8008A55F1D34273A00034B3A /* coreMotionHadeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coreMotionHadeler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8008A53F1D34199100034B3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8008A55E1D34247C00034B3A /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8008A5391D34199100034B3A = {
+			isa = PBXGroup;
+			children = (
+				8008A55D1D34247C00034B3A /* CoreMotion.framework */,
+				8008A5441D34199100034B3A /* Sensors */,
+				8008A5431D34199100034B3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8008A5431D34199100034B3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8008A5421D34199100034B3A /* Sensors.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8008A5441D34199100034B3A /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				8008A5451D34199100034B3A /* AppDelegate.swift */,
+				8008A5471D34199100034B3A /* ViewController.swift */,
+				8008A5491D34199200034B3A /* Main.storyboard */,
+				8008A54C1D34199200034B3A /* Assets.xcassets */,
+				8008A54E1D34199200034B3A /* LaunchScreen.storyboard */,
+				8008A5511D34199200034B3A /* Info.plist */,
+				8008A5571D3421CD00034B3A /* MagnetometerController.swift */,
+				8008A5591D34227B00034B3A /* GyroscopeController.swift */,
+				8008A55B1D3422B300034B3A /* AccelerometerController.swift */,
+				8008A55F1D34273A00034B3A /* coreMotionHadeler.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8008A5411D34199100034B3A /* Sensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8008A5541D34199200034B3A /* Build configuration list for PBXNativeTarget "Sensors" */;
+			buildPhases = (
+				8008A53E1D34199100034B3A /* Sources */,
+				8008A53F1D34199100034B3A /* Frameworks */,
+				8008A5401D34199100034B3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sensors;
+			productName = Sensors;
+			productReference = 8008A5421D34199100034B3A /* Sensors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8008A53A1D34199100034B3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Digby Andrews";
+				TargetAttributes = {
+					8008A5411D34199100034B3A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8008A53D1D34199100034B3A /* Build configuration list for PBXProject "Sensors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8008A5391D34199100034B3A;
+			productRefGroup = 8008A5431D34199100034B3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8008A5411D34199100034B3A /* Sensors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8008A5401D34199100034B3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8008A5501D34199200034B3A /* LaunchScreen.storyboard in Resources */,
+				8008A54D1D34199200034B3A /* Assets.xcassets in Resources */,
+				8008A54B1D34199200034B3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8008A53E1D34199100034B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8008A5601D34273A00034B3A /* coreMotionHadeler.swift in Sources */,
+				8008A55C1D3422B300034B3A /* AccelerometerController.swift in Sources */,
+				8008A5581D3421CD00034B3A /* MagnetometerController.swift in Sources */,
+				8008A5481D34199100034B3A /* ViewController.swift in Sources */,
+				8008A5461D34199100034B3A /* AppDelegate.swift in Sources */,
+				8008A55A1D34227B00034B3A /* GyroscopeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8008A5491D34199200034B3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8008A54A1D34199200034B3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8008A54E1D34199200034B3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8008A54F1D34199200034B3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8008A5521D34199200034B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8008A5531D34199200034B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8008A5551D34199200034B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sensors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciccc.digby.Sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8008A5561D34199200034B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sensors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciccc.digby.Sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8008A53D1D34199100034B3A /* Build configuration list for PBXProject "Sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8008A5521D34199200034B3A /* Debug */,
+				8008A5531D34199200034B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8008A5541D34199200034B3A /* Build configuration list for PBXNativeTarget "Sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8008A5551D34199200034B3A /* Debug */,
+				8008A5561D34199200034B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8008A53A1D34199100034B3A /* Project object */;
+}
