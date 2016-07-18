@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Person.h"
+#import "DetailViewController.h"
 
 @interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -35,7 +35,7 @@
     for (int i = 0; i < nPeople; i++)
     {
         NSString *idx = [NSString stringWithFormat:@"%d", i];
-        Person *p = [userDefaults objectForKey:idx];
+        NSDictionary *p = [userDefaults objectForKey:idx];
         [self.peopleArr addObject:p];
     }
 }
@@ -55,6 +55,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.peopleArr count];
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [DetailViewController setPerson:self.peopleArr[indexPath.row]];
+    return indexPath;
 }
 
 - (IBAction)takePicture:(id)sender
@@ -85,7 +91,6 @@
             NSData *data = [NSData dataWithData:UIImageJPEGRepresentation(self.imgView.image, 1.0)];
             [person setObject:data forKey:@"image"];
         }
-        
         
         [self.peopleArr addObject:person];
         [self.tableView reloadData];

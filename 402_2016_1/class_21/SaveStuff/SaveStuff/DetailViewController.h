@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
++ (void) setPerson:(NSDictionary *)p;
+
 @end
