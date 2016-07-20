@@ -33,9 +33,9 @@ static NSDictionary *person = nil;
     if (person)
     {
         self.lblName.text = person[@"name"];
-        self.lblId.text = person[@"Id"];
-        self.lblAge.text = person[@"Age"];
-        self.lblEmail.text = person[@"Email"];
+        self.lblId.text = person[@"identity"];
+        self.lblAge.text = person[@"age"];
+        self.lblEmail.text = person[@"email"];
         self.imgView.image = [UIImage imageWithData:person[@"image"]];
     }
 }
