@@ -48,6 +48,13 @@ class CircleView: UIView {
         let twoPi = CGFloat(M_PI) * 2
         pen.addArc(withCenter: center, radius: rect.size.width / 2 - 5, startAngle: 0.0, endAngle: twoPi, clockwise: true)
         
+        // configure and paint it
+        //pen.lineWidth = 10.0
+        //pen.setStrokeColor(color: UIColor.clear)
+        //pen.stroke()
+        pen.setFillColor(color: UIColor.blue)
+        pen.fill()
+        
         //make the triangle
         let lastPoint = CGPoint(x: rect.size.width, y: rect.size.height)
         pen.move(to: lastPoint)
@@ -58,8 +65,8 @@ class CircleView: UIView {
         
         // configure and paint it
         //pen.lineWidth = 10.0
-        pen.setStrokeColor(color: UIColor.clear)
-        pen.stroke()
+        //pen.setStrokeColor(color: UIColor.clear)
+        //pen.stroke()
         pen.setFillColor(color: UIColor.blue)
         pen.fill()
         
