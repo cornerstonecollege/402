@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var myCustomView: UIView?   // optional view
+    var isDragging = false    // flag
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,25 +29,33 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touches began")
+        if touches.first != nil && self.myCustomView != nil {
+            let point = touches.first!.location(in: self.view)
+            
+            // if the point is contained within the frame bounds
+            if self.myCustomView!.frame.contains(point) {
+                self.isDragging = true
+                print("touches began")
+            }
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if self.myCustomView != nil && touches.first != nil {
-            
-            self.myCustomView!.center = touches.first!.location(in: self.view)
+        if self.isDragging {
+            if self.myCustomView != nil && touches.first != nil {
+                self.myCustomView!.center = touches.first!.location(in: self.view)
+                print("touches moved")
+            }
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.isDragging = false
         print("touches ended")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
-
-
 }
 
