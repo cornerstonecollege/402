@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-FC-N9Q">
+                                <color key="backgroundColor" red="0.124243981" green="0.73452167189999995" blue="0.98206397249999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.090196080509999998" green="0.14509804549999999" blue="0.45882353190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77t-vw-yPk">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoY-0r-Ewz">
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hoY-0r-Ewz" firstAttribute="top" secondItem="77t-vw-yPk" secondAttribute="bottom" constant="25" id="52v-l3-JzL"/>
+                            <constraint firstItem="nHf-FC-N9Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="RTv-xg-DXx"/>
+                            <constraint firstItem="hoY-0r-Ewz" firstAttribute="centerX" secondItem="77t-vw-yPk" secondAttribute="centerX" id="Us1-OZ-GU8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nHf-FC-N9Q" secondAttribute="trailing" constant="20" id="WK2-Ce-orK"/>
+                            <constraint firstItem="77t-vw-yPk" firstAttribute="top" secondItem="nHf-FC-N9Q" secondAttribute="bottom" constant="10" id="l81-Vp-oBp"/>
+                            <constraint firstItem="nHf-FC-N9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mTS-i5-M2A"/>
+                            <constraint firstItem="77t-vw-yPk" firstAttribute="top" secondItem="nHf-FC-N9Q" secondAttribute="bottom" constant="10" id="tDl-k7-272"/>
+                            <constraint firstItem="77t-vw-yPk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="tjP-cZ-N3c"/>
+                            <constraint firstItem="nHf-FC-N9Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="wgN-J6-r3Z"/>
+                            <constraint firstItem="77t-vw-yPk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="xj2-un-tWN"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hCx-qf-GLm" appends="YES" id="g3d-Zp-uJ7"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="hCx-qf-GLm">
+                    <connections>
+                        <action selector="pinchRecognizer:" destination="BYZ-38-t0r" id="KWD-rR-mxH"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="42.728635682158924"/>
+        </scene>
+    </scenes>
+</document>
