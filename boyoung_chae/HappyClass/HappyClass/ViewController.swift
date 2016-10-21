@@ -52,10 +52,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func btnAddClicked(_ sender: AnyObject) {
         
         if let name = self.txtName.text, let address = self.txtAdd.text {
+            
             ViewController.names += [["name" : name, "address" : address]]
             self.tableView.reloadData()
             print("Success!")
         }
+    }
+    
+    @IBAction func btnDeleteClicked(_ sender: AnyObject) {
+        
+        var index = self.tableView.indexPathForSelectedRow
+        ViewController.names.remove(at: (index?.item)!)
+        self.tableView.reloadData()
+        for controller in (self.parent?.parent as! UISplitViewController).viewControllers {
+            if (controller is DetailViewController) {
+                (controller as!DetailViewController).clearLabels()
+                break
+            }
+        }
+        print("Deleted!")
     }
     
     override func didReceiveMemoryWarning() {

@@ -28,6 +28,13 @@ class DetailViewController: UIViewController {
             self.lblAddress.text = obj["address"]
         }
     }
+    
+    func clearLabels() {
+    
+        self.lblName.text = "The name's deleted."
+        self.lblAddress.text = "The address's deleted."
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
