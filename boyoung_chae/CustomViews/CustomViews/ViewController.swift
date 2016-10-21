@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CustomViews
 //
-//  Created by Luiz on 2016-10-13.
-//  Copyright © 2016 Ideia do Luiz. All rights reserved.
+//  Created by Boyoung on 2016-10-13.
+//  Copyright © 2016 Boyoung. All rights reserved.
 //
 
 import UIKit
@@ -37,8 +37,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
 
 }
 
