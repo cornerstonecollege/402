@@ -10,12 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      
         
         let frame = CGRect(x: 0, y: 50, width: 100, height: 100)
         let view1 = FirstCustomView(frame: frame)
@@ -34,21 +31,16 @@ class ViewController: UIViewController {
         let circle = CircleView(frame: circleFrame)
         //circle.backgroundColor = UIColor.yellow
         self.view.addSubview(circle)
-        
-        
-
     }
-    
-    
 
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func didPanGesture(_ pan: UIPanGestureRecognizer) {
+        pan.view!.center = pan.location(in: self.view)
+    }
 }
+
 

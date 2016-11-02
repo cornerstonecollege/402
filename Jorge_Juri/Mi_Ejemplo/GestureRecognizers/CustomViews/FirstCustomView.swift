@@ -10,16 +10,6 @@ import UIKit
 
 class FirstCustomView: UIView {
     
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        self.center = touches.first!.location(in: self.superview)
-        //es porque se debe invocar al padre no a si mismo
-        
-        
-        
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.red // default background color
@@ -46,5 +36,8 @@ class FirstCustomView: UIView {
         // Drawing code
     }
     */
-
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.center = touches.first!.location(in: self.superview)
+    }
 }

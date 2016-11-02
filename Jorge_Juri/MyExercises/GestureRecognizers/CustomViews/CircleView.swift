@@ -21,18 +21,40 @@ extension UIBezierPath {
 
 class CircleView: UIView {
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        self.center = touches.first!.location(in: self.superview)
-        //es porque se debe invocar al padre no a si mismo
-        
-        
-        
-    }
+   var bubleColor = UIColor.blue
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
+        
+       /*  let tap = UITapGestureRecognizer(target : self, action: #selector(CircleView.tap))
+        
+        tap.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tap)*/
+        
+       let pinch = UITapGestureRecognizer(target: self, action: CircleView.pinch(_:))
+        self.addGestureRecognizer(pinch)
+    }
+    
+    
+    func tap(){
+    let red = Float(arc4random_uniform(256)) / 255.0
+    let blue = Float(arc4random_uniform(256)) / 255.0
+    let green = Float(arc4random_uniform(256)) / 255.0
+        
+
+        self.bubleColor = UIColor(colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
+        
+        self.setNeedsDisplay()
+    }
+    
+    func pinch(_ pinchGesture: UITapGestureRecognizer){
+        
+        
+        let size = CGSize(width: self.frame.width * pinchGesture.scale, height: <#T##CGFloat#>)
+    
+        let frame = CGRect(origin: self.frame.origin, size: <#T##CGSize#>)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -85,5 +107,14 @@ class CircleView: UIView {
 //        // We are avoiding to do UIColor.black.setStroke()
 //        pen.setStrokeColor(color: UIColor.black)
 //        pen.stroke()
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.center = touches.first!.location(in: self.superview)
+        //es porque se debe invocar al padre no a si mismo
+        
+        
+        
     }
 }

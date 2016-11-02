@@ -10,21 +10,11 @@ import UIKit
 
 class FirstCustomView: UIView {
     
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        self.center = touches.first!.location(in: self.superview)
-        //es porque se debe invocar al padre no a si mismo
-        
-        
-        
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.red // default background color
-        let label = UILabel()
-        label.text = "Name"
+    let label = UILabel()
+      label.text = "Name"
         label.sizeToFit()
         label.center = CGPoint(x: self.frame.size.width / 2, y: 10)
         self.addSubview(label)

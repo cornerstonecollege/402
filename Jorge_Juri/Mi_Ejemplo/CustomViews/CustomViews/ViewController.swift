@@ -10,18 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      
         
         let frame = CGRect(x: 0, y: 50, width: 100, height: 100)
         let view1 = FirstCustomView(frame: frame)
         self.view.addSubview(view1)
         
-        let frame2 = CGRect(x: 200, y: 50, width: 100, height: 100)
+   /*     let frame2 = CGRect(x: 200, y: 50, width: 100, height: 100)
         let view2 = FirstCustomView(frame: frame2)
         self.view.addSubview(view2)
         
@@ -33,22 +30,15 @@ class ViewController: UIViewController {
         let circleFrame = CGRect(x: 100, y: 100, width: 100, height: 100)
         let circle = CircleView(frame: circleFrame)
         //circle.backgroundColor = UIColor.yellow
-        self.view.addSubview(circle)
-        
-        
-
+        self.view.addSubview(circle)*/
     }
-    
-    
-
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 
 }
 
