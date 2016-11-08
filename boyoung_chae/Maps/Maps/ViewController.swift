@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -27,10 +27,29 @@ class ViewController: UIViewController {
         // Check again because we do not know if the user gave us authorization.
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
         
+            self.mapView.delegate = self
             self.locationManager.startUpdatingLocation()
             self.locationManager.startUpdatingHeading()
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        let region = MKCoordinateRegionMake((locations.first?.coordinate)!, MKCoordinateSpanMake(1, 1))
+        self.mapView.setRegion(region, animated: true)
+        
+        for location in locations {
+            
+            let x = Double(arc4random_uniform(1000)) / 1000.0
+            let y = Double(arc4random_uniform(1000)) / 1000.0
+        
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2DMake(location.coordinate.latitude + x, location.coordinate.longitude + y)
+            
+//            annotation.coordinate = CLLocationCoordinate2DMake(35.250841, -101.8844095)
+            
+            self.mapView.addAnnotation(annotation)
+        }
     }
 
     override func didReceiveMemoryWarning() {
