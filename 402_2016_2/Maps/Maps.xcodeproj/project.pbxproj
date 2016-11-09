@@ -13,6 +13,8 @@
 		259BB0C61DD136C60025E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259BB0C51DD136C60025E390 /* Assets.xcassets */; };
 		259BB0C91DD136C60025E390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259BB0C71DD136C60025E390 /* LaunchScreen.storyboard */; };
 		259BB0D21DD136ED0025E390 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259BB0D11DD136ED0025E390 /* MapKit.framework */; };
+		25B4A6BD1DD27B820007582E /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4A6BC1DD27B820007582E /* AnnotationView.swift */; };
+		25F966C21DD277A80071DF5E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F966C11DD277A80071DF5E /* CustomAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		259BB0C81DD136C60025E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		259BB0CA1DD136C60025E390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259BB0D11DD136ED0025E390 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		25B4A6BC1DD27B820007582E /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		25F966C11DD277A80071DF5E /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				259BB0C51DD136C60025E390 /* Assets.xcassets */,
 				259BB0C71DD136C60025E390 /* LaunchScreen.storyboard */,
 				259BB0CA1DD136C60025E390 /* Info.plist */,
+				25F966C11DD277A80071DF5E /* CustomAnnotation.swift */,
+				25B4A6BC1DD27B820007582E /* AnnotationView.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				259BB0C11DD136C60025E390 /* ViewController.swift in Sources */,
+				25B4A6BD1DD27B820007582E /* AnnotationView.swift in Sources */,
 				259BB0BF1DD136C60025E390 /* AppDelegate.swift in Sources */,
+				25F966C21DD277A80071DF5E /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

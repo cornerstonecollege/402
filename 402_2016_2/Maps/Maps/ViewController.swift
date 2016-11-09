@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -26,9 +26,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // check again because we do not know if the user gave us authorization
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             self.locationManager.delegate = self
+            self.mapView.delegate = self
             self.locationManager.startUpdatingLocation()
             self.locationManager.startUpdatingHeading()
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is CustomAnnotation {
+            let view = AnnotationView(annotation: annotation, reuseIdentifier: "dsds")
+            return view
+        }
+        
+        return nil
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -39,7 +49,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let x = Double(arc4random_uniform(1000)) / 1000.0
             let y = Double(arc4random_uniform(1000)) / 1000.0
             
-            let annotation = MKPointAnnotation()
+            let annotation = CustomAnnotation()
             annotation.coordinate = CLLocationCoordinate2DMake(location.coordinate.latitude + x, location.coordinate.longitude + y)
             //annotation.coordinate = CLLocationCoordinate2DMake(49.284789, -123.113677)
             self.mapView.addAnnotation(annotation)
