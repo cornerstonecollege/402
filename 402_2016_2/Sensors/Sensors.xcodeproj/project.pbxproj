@@ -7,106 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE35B2F21DB04421008F228D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35B2F11DB04421008F228D /* AppDelegate.swift */; };
-		EE35B2F41DB04421008F228D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35B2F31DB04421008F228D /* ViewController.swift */; };
-		EE35B2F71DB04421008F228D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE35B2F51DB04421008F228D /* Main.storyboard */; };
-		EE35B2F91DB04421008F228D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE35B2F81DB04421008F228D /* Assets.xcassets */; };
-		EE35B2FC1DB04421008F228D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE35B2FA1DB04421008F228D /* LaunchScreen.storyboard */; };
-		EE35B3041DB04459008F228D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35B3031DB04459008F228D /* CircleView.swift */; };
-		EE35B3061DB04C81008F228D /* FirstCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35B3051DB04C81008F228D /* FirstCustomView.swift */; };
+		259BB09E1DD131E00025E390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BB09D1DD131E00025E390 /* AppDelegate.swift */; };
+		259BB0A01DD131E00025E390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BB09F1DD131E00025E390 /* ViewController.swift */; };
+		259BB0A31DD131E00025E390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259BB0A11DD131E00025E390 /* Main.storyboard */; };
+		259BB0A51DD131E00025E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259BB0A41DD131E00025E390 /* Assets.xcassets */; };
+		259BB0A81DD131E00025E390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259BB0A61DD131E00025E390 /* LaunchScreen.storyboard */; };
+		259BB0B11DD1327C0025E390 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259BB0B01DD1327C0025E390 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE35B2EE1DB04421008F228D /* CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE35B2F11DB04421008F228D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE35B2F31DB04421008F228D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE35B2F61DB04421008F228D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE35B2F81DB04421008F228D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE35B2FB1DB04421008F228D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EE35B2FD1DB04421008F228D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE35B3031DB04459008F228D /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		EE35B3051DB04C81008F228D /* FirstCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomView.swift; sourceTree = "<group>"; };
+		259BB09A1DD131E00025E390 /* Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		259BB09D1DD131E00025E390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		259BB09F1DD131E00025E390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		259BB0A21DD131E00025E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		259BB0A41DD131E00025E390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		259BB0A71DD131E00025E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		259BB0A91DD131E00025E390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259BB0B01DD1327C0025E390 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EE35B2EB1DB04420008F228D /* Frameworks */ = {
+		259BB0971DD131DF0025E390 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259BB0B11DD1327C0025E390 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE35B2E51DB04420008F228D = {
+		259BB0911DD131DF0025E390 = {
 			isa = PBXGroup;
 			children = (
-				EE35B2F01DB04421008F228D /* CustomViews */,
-				EE35B2EF1DB04421008F228D /* Products */,
+				259BB09C1DD131E00025E390 /* Sensors */,
+				259BB09B1DD131E00025E390 /* Products */,
+				259BB0AF1DD1327C0025E390 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		EE35B2EF1DB04421008F228D /* Products */ = {
+		259BB09B1DD131E00025E390 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE35B2EE1DB04421008F228D /* CustomViews.app */,
+				259BB09A1DD131E00025E390 /* Sensors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE35B2F01DB04421008F228D /* CustomViews */ = {
+		259BB09C1DD131E00025E390 /* Sensors */ = {
 			isa = PBXGroup;
 			children = (
-				EE35B2F11DB04421008F228D /* AppDelegate.swift */,
-				EE35B2F31DB04421008F228D /* ViewController.swift */,
-				EE35B3031DB04459008F228D /* CircleView.swift */,
-				EE35B3051DB04C81008F228D /* FirstCustomView.swift */,
-				EE35B2F51DB04421008F228D /* Main.storyboard */,
-				EE35B2F81DB04421008F228D /* Assets.xcassets */,
-				EE35B2FA1DB04421008F228D /* LaunchScreen.storyboard */,
-				EE35B2FD1DB04421008F228D /* Info.plist */,
+				259BB09D1DD131E00025E390 /* AppDelegate.swift */,
+				259BB09F1DD131E00025E390 /* ViewController.swift */,
+				259BB0A11DD131E00025E390 /* Main.storyboard */,
+				259BB0A41DD131E00025E390 /* Assets.xcassets */,
+				259BB0A61DD131E00025E390 /* LaunchScreen.storyboard */,
+				259BB0A91DD131E00025E390 /* Info.plist */,
 			);
-			path = CustomViews;
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		259BB0AF1DD1327C0025E390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				259BB0B01DD1327C0025E390 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE35B2ED1DB04420008F228D /* CustomViews */ = {
+		259BB0991DD131DF0025E390 /* Sensors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE35B3001DB04421008F228D /* Build configuration list for PBXNativeTarget "CustomViews" */;
+			buildConfigurationList = 259BB0AC1DD131E00025E390 /* Build configuration list for PBXNativeTarget "Sensors" */;
 			buildPhases = (
-				EE35B2EA1DB04420008F228D /* Sources */,
-				EE35B2EB1DB04420008F228D /* Frameworks */,
-				EE35B2EC1DB04420008F228D /* Resources */,
+				259BB0961DD131DF0025E390 /* Sources */,
+				259BB0971DD131DF0025E390 /* Frameworks */,
+				259BB0981DD131DF0025E390 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CustomViews;
-			productName = CustomViews;
-			productReference = EE35B2EE1DB04421008F228D /* CustomViews.app */;
+			name = Sensors;
+			productName = Sensors;
+			productReference = 259BB09A1DD131E00025E390 /* Sensors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EE35B2E61DB04420008F228D /* Project object */ = {
+		259BB0921DD131DF0025E390 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = Boyoung;
+				ORGANIZATIONNAME = "Ideia do Luiz";
 				TargetAttributes = {
-					EE35B2ED1DB04420008F228D = {
+					259BB0991DD131DF0025E390 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EE35B2E91DB04420008F228D /* Build configuration list for PBXProject "CustomViews" */;
+			buildConfigurationList = 259BB0951DD131DF0025E390 /* Build configuration list for PBXProject "Sensors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,56 +120,54 @@
 				en,
 				Base,
 			);
-			mainGroup = EE35B2E51DB04420008F228D;
-			productRefGroup = EE35B2EF1DB04421008F228D /* Products */;
+			mainGroup = 259BB0911DD131DF0025E390;
+			productRefGroup = 259BB09B1DD131E00025E390 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE35B2ED1DB04420008F228D /* CustomViews */,
+				259BB0991DD131DF0025E390 /* Sensors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EE35B2EC1DB04420008F228D /* Resources */ = {
+		259BB0981DD131DF0025E390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE35B2FC1DB04421008F228D /* LaunchScreen.storyboard in Resources */,
-				EE35B2F91DB04421008F228D /* Assets.xcassets in Resources */,
-				EE35B2F71DB04421008F228D /* Main.storyboard in Resources */,
+				259BB0A81DD131E00025E390 /* LaunchScreen.storyboard in Resources */,
+				259BB0A51DD131E00025E390 /* Assets.xcassets in Resources */,
+				259BB0A31DD131E00025E390 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EE35B2EA1DB04420008F228D /* Sources */ = {
+		259BB0961DD131DF0025E390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE35B3041DB04459008F228D /* CircleView.swift in Sources */,
-				EE35B2F41DB04421008F228D /* ViewController.swift in Sources */,
-				EE35B3061DB04C81008F228D /* FirstCustomView.swift in Sources */,
-				EE35B2F21DB04421008F228D /* AppDelegate.swift in Sources */,
+				259BB0A01DD131E00025E390 /* ViewController.swift in Sources */,
+				259BB09E1DD131E00025E390 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE35B2F51DB04421008F228D /* Main.storyboard */ = {
+		259BB0A11DD131E00025E390 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE35B2F61DB04421008F228D /* Base */,
+				259BB0A21DD131E00025E390 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EE35B2FA1DB04421008F228D /* LaunchScreen.storyboard */ = {
+		259BB0A61DD131E00025E390 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE35B2FB1DB04421008F228D /* Base */,
+				259BB0A71DD131E00025E390 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EE35B2FE1DB04421008F228D /* Debug */ = {
+		259BB0AA1DD131E00025E390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		EE35B2FF1DB04421008F228D /* Release */ = {
+		259BB0AB1DD131E00025E390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,25 +268,25 @@
 			};
 			name = Release;
 		};
-		EE35B3011DB04421008F228D /* Debug */ = {
+		259BB0AD1DD131E00025E390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CustomViews/Info.plist;
+				INFOPLIST_FILE = Sensors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.CustomViews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideiadoluiz.Sensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		EE35B3021DB04421008F228D /* Release */ = {
+		259BB0AE1DD131E00025E390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CustomViews/Info.plist;
+				INFOPLIST_FILE = Sensors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.CustomViews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideiadoluiz.Sensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -291,25 +295,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE35B2E91DB04420008F228D /* Build configuration list for PBXProject "CustomViews" */ = {
+		259BB0951DD131DF0025E390 /* Build configuration list for PBXProject "Sensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE35B2FE1DB04421008F228D /* Debug */,
-				EE35B2FF1DB04421008F228D /* Release */,
+				259BB0AA1DD131E00025E390 /* Debug */,
+				259BB0AB1DD131E00025E390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE35B3001DB04421008F228D /* Build configuration list for PBXNativeTarget "CustomViews" */ = {
+		259BB0AC1DD131E00025E390 /* Build configuration list for PBXNativeTarget "Sensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE35B3011DB04421008F228D /* Debug */,
-				EE35B3021DB04421008F228D /* Release */,
+				259BB0AD1DD131E00025E390 /* Debug */,
+				259BB0AE1DD131E00025E390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EE35B2E61DB04420008F228D /* Project object */;
+	rootObject = 259BB0921DD131DF0025E390 /* Project object */;
 }

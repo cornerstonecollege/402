@@ -60,12 +60,12 @@
 			children = (
 				EE35B2F11DB04421008F228D /* AppDelegate.swift */,
 				EE35B2F31DB04421008F228D /* ViewController.swift */,
+				EE35B3031DB04459008F228D /* CircleView.swift */,
+				EE35B3051DB04C81008F228D /* FirstCustomView.swift */,
 				EE35B2F51DB04421008F228D /* Main.storyboard */,
 				EE35B2F81DB04421008F228D /* Assets.xcassets */,
 				EE35B2FA1DB04421008F228D /* LaunchScreen.storyboard */,
 				EE35B2FD1DB04421008F228D /* Info.plist */,
-				EE35B3031DB04459008F228D /* CircleView.swift */,
-				EE35B3051DB04C81008F228D /* FirstCustomView.swift */,
 			);
 			name = GestureRecognizer;
 			path = CustomViews;
