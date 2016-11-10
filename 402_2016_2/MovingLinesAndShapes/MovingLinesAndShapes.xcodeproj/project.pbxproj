@@ -97,12 +97,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
+<<<<<<< HEAD
+				LastUpgradeCheck = 0800;
+=======
 				LastUpgradeCheck = 0810;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 				ORGANIZATIONNAME = "Ideia do Luiz";
 				TargetAttributes = {
 					259DF6341DCA87D700EFD05A = {
 						CreatedOnToolsVersion = 8.0;
+<<<<<<< HEAD
+=======
 						DevelopmentTeam = SXSRVAX2S3;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -190,7 +197,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+<<<<<<< HEAD
+=======
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -241,7 +251,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+<<<<<<< HEAD
+=======
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,7 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
+=======
 				DEVELOPMENT_TEAM = SXSRVAX2S3;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 				INFOPLIST_FILE = MovingLinesAndShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ideiadoluiz.MovingLinesAndShapes;
@@ -284,7 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+<<<<<<< HEAD
+=======
 				DEVELOPMENT_TEAM = SXSRVAX2S3;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 				INFOPLIST_FILE = MovingLinesAndShapes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ideiadoluiz.MovingLinesAndShapes;
@@ -312,7 +331,10 @@
 				259DF6491DCA87D700EFD05A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
+=======
 			defaultConfigurationName = Release;
+>>>>>>> 2896dbd8e5bdcc0eb9b4740ad7c83499073e2ac9
 		};
 /* End XCConfigurationList section */
 	};
