@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE990B201DDD104900DF044D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE990B1F1DDD104900DF044D /* AppDelegate.swift */; };
+		EE990B221DDD104900DF044D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE990B211DDD104900DF044D /* ViewController.swift */; };
+		EE990B251DDD104A00DF044D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE990B231DDD104A00DF044D /* Main.storyboard */; };
+		EE990B271DDD104A00DF044D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE990B261DDD104A00DF044D /* Assets.xcassets */; };
+		EE990B2A1DDD104A00DF044D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE990B281DDD104A00DF044D /* LaunchScreen.storyboard */; };
+		EE990B321DDD11A200DF044D /* DataSourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE990B311DDD11A200DF044D /* DataSourceHelper.swift */; };
+		EE990B341DDD152500DF044D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE990B331DDD152500DF044D /* Person.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE990B1C1DDD104900DF044D /* SavingWithNSCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingWithNSCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE990B1F1DDD104900DF044D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE990B211DDD104900DF044D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE990B241DDD104A00DF044D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE990B261DDD104A00DF044D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE990B291DDD104A00DF044D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE990B2B1DDD104A00DF044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE990B311DDD11A200DF044D /* DataSourceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceHelper.swift; sourceTree = "<group>"; };
+		EE990B331DDD152500DF044D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE990B191DDD104900DF044D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE990B131DDD104900DF044D = {
+			isa = PBXGroup;
+			children = (
+				EE990B1E1DDD104900DF044D /* SavingWithNSCoding */,
+				EE990B1D1DDD104900DF044D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE990B1D1DDD104900DF044D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE990B1C1DDD104900DF044D /* SavingWithNSCoding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE990B1E1DDD104900DF044D /* SavingWithNSCoding */ = {
+			isa = PBXGroup;
+			children = (
+				EE990B1F1DDD104900DF044D /* AppDelegate.swift */,
+				EE990B211DDD104900DF044D /* ViewController.swift */,
+				EE990B231DDD104A00DF044D /* Main.storyboard */,
+				EE990B261DDD104A00DF044D /* Assets.xcassets */,
+				EE990B281DDD104A00DF044D /* LaunchScreen.storyboard */,
+				EE990B2B1DDD104A00DF044D /* Info.plist */,
+				EE990B311DDD11A200DF044D /* DataSourceHelper.swift */,
+				EE990B331DDD152500DF044D /* Person.swift */,
+			);
+			path = SavingWithNSCoding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE990B1B1DDD104900DF044D /* SavingWithNSCoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE990B2E1DDD104A00DF044D /* Build configuration list for PBXNativeTarget "SavingWithNSCoding" */;
+			buildPhases = (
+				EE990B181DDD104900DF044D /* Sources */,
+				EE990B191DDD104900DF044D /* Frameworks */,
+				EE990B1A1DDD104900DF044D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SavingWithNSCoding;
+			productName = SavingWithNSCoding;
+			productReference = EE990B1C1DDD104900DF044D /* SavingWithNSCoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE990B141DDD104900DF044D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Boyoung;
+				TargetAttributes = {
+					EE990B1B1DDD104900DF044D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BY6NYBSV2A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE990B171DDD104900DF044D /* Build configuration list for PBXProject "SavingWithNSCoding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE990B131DDD104900DF044D;
+			productRefGroup = EE990B1D1DDD104900DF044D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE990B1B1DDD104900DF044D /* SavingWithNSCoding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE990B1A1DDD104900DF044D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE990B2A1DDD104A00DF044D /* LaunchScreen.storyboard in Resources */,
+				EE990B271DDD104A00DF044D /* Assets.xcassets in Resources */,
+				EE990B251DDD104A00DF044D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE990B181DDD104900DF044D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE990B321DDD11A200DF044D /* DataSourceHelper.swift in Sources */,
+				EE990B221DDD104900DF044D /* ViewController.swift in Sources */,
+				EE990B341DDD152500DF044D /* Person.swift in Sources */,
+				EE990B201DDD104900DF044D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE990B231DDD104A00DF044D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE990B241DDD104A00DF044D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE990B281DDD104A00DF044D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE990B291DDD104A00DF044D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE990B2C1DDD104A00DF044D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE990B2D1DDD104A00DF044D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE990B2F1DDD104A00DF044D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BY6NYBSV2A;
+				INFOPLIST_FILE = SavingWithNSCoding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.SavingWithNSCoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE990B301DDD104A00DF044D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BY6NYBSV2A;
+				INFOPLIST_FILE = SavingWithNSCoding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.SavingWithNSCoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE990B171DDD104900DF044D /* Build configuration list for PBXProject "SavingWithNSCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE990B2C1DDD104A00DF044D /* Debug */,
+				EE990B2D1DDD104A00DF044D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE990B2E1DDD104A00DF044D /* Build configuration list for PBXNativeTarget "SavingWithNSCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE990B2F1DDD104A00DF044D /* Debug */,
+				EE990B301DDD104A00DF044D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE990B141DDD104900DF044D /* Project object */;
+}
