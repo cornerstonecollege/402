@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEA785F11DD2800900B88F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA785F01DD2800900B88F26 /* AppDelegate.swift */; };
+		EEA785F31DD2800900B88F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA785F21DD2800900B88F26 /* ViewController.swift */; };
+		EEA785F61DD2800900B88F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA785F41DD2800900B88F26 /* Main.storyboard */; };
+		EEA785F81DD2800900B88F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA785F71DD2800900B88F26 /* Assets.xcassets */; };
+		EEA785FB1DD2800900B88F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA785F91DD2800900B88F26 /* LaunchScreen.storyboard */; };
+		EEA786041DD2801E00B88F26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA786031DD2801E00B88F26 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EEA785ED1DD2800900B88F26 /* CompassLocationAndCustomAnnotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompassLocationAndCustomAnnotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA785F01DD2800900B88F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEA785F21DD2800900B88F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEA785F51DD2800900B88F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEA785F71DD2800900B88F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA785FA1DD2800900B88F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEA785FC1DD2800900B88F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA786031DD2801E00B88F26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEA785EA1DD2800900B88F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA786041DD2801E00B88F26 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEA785E41DD2800900B88F26 = {
+			isa = PBXGroup;
+			children = (
+				EEA785EF1DD2800900B88F26 /* CompassLocationAndCustomAnnotation */,
+				EEA785EE1DD2800900B88F26 /* Products */,
+				EEA786021DD2801E00B88F26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEA785EE1DD2800900B88F26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEA785ED1DD2800900B88F26 /* CompassLocationAndCustomAnnotation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEA785EF1DD2800900B88F26 /* CompassLocationAndCustomAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				EEA785F01DD2800900B88F26 /* AppDelegate.swift */,
+				EEA785F21DD2800900B88F26 /* ViewController.swift */,
+				EEA785F41DD2800900B88F26 /* Main.storyboard */,
+				EEA785F71DD2800900B88F26 /* Assets.xcassets */,
+				EEA785F91DD2800900B88F26 /* LaunchScreen.storyboard */,
+				EEA785FC1DD2800900B88F26 /* Info.plist */,
+			);
+			path = CompassLocationAndCustomAnnotation;
+			sourceTree = "<group>";
+		};
+		EEA786021DD2801E00B88F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA786031DD2801E00B88F26 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEA785EC1DD2800900B88F26 /* CompassLocationAndCustomAnnotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA785FF1DD2800900B88F26 /* Build configuration list for PBXNativeTarget "CompassLocationAndCustomAnnotation" */;
+			buildPhases = (
+				EEA785E91DD2800900B88F26 /* Sources */,
+				EEA785EA1DD2800900B88F26 /* Frameworks */,
+				EEA785EB1DD2800900B88F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompassLocationAndCustomAnnotation;
+			productName = CompassLocationAndCustomAnnotation;
+			productReference = EEA785ED1DD2800900B88F26 /* CompassLocationAndCustomAnnotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEA785E51DD2800900B88F26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Boyoung;
+				TargetAttributes = {
+					EEA785EC1DD2800900B88F26 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EEA785E81DD2800900B88F26 /* Build configuration list for PBXProject "CompassLocationAndCustomAnnotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEA785E41DD2800900B88F26;
+			productRefGroup = EEA785EE1DD2800900B88F26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEA785EC1DD2800900B88F26 /* CompassLocationAndCustomAnnotation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEA785EB1DD2800900B88F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA785FB1DD2800900B88F26 /* LaunchScreen.storyboard in Resources */,
+				EEA785F81DD2800900B88F26 /* Assets.xcassets in Resources */,
+				EEA785F61DD2800900B88F26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEA785E91DD2800900B88F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA785F31DD2800900B88F26 /* ViewController.swift in Sources */,
+				EEA785F11DD2800900B88F26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEA785F41DD2800900B88F26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA785F51DD2800900B88F26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEA785F91DD2800900B88F26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA785FA1DD2800900B88F26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEA785FD1DD2800900B88F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEA785FE1DD2800900B88F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEA786001DD2800900B88F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CompassLocationAndCustomAnnotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.CompassLocationAndCustomAnnotation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EEA786011DD2800900B88F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CompassLocationAndCustomAnnotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyoung.CompassLocationAndCustomAnnotation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEA785E81DD2800900B88F26 /* Build configuration list for PBXProject "CompassLocationAndCustomAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA785FD1DD2800900B88F26 /* Debug */,
+				EEA785FE1DD2800900B88F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA785FF1DD2800900B88F26 /* Build configuration list for PBXNativeTarget "CompassLocationAndCustomAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA786001DD2800900B88F26 /* Debug */,
+				EEA786011DD2800900B88F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEA785E51DD2800900B88F26 /* Project object */;
+}
