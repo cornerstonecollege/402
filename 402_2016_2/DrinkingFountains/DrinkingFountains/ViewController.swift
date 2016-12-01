@@ -9,25 +9,31 @@
 import UIKit
 import MapKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    var json:NSDictionary?
+    var json:NSArray?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let session = URLSession.shared
-        let url = URL(string: "ftp://webftp.vancouver.ca/OpenData/json/drinking_fountains.json")
-        let task = session.dataTask(with: url!) { (data, response, error) in
+        let url = URL(string: "http://192.168.11.212:8888/test/index.php")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "DELETE"
+        //request.httpBody = "name=test1".data(using: .utf8)
+        request.setValue("luiz", forHTTPHeaderField: "NAME")
+        //request
+        let task = session.dataTask(with: request) { (data, response, error) in
             
             if let err = error {
                 print(err)
             }
             
             if data != nil {
-                self.json = try! JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! NSDictionary
+                self.json = try! JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! NSArray
                 // when we finished downloading the json:
                 self.fillMap()
             } else {
@@ -39,30 +45,7 @@ class ViewController: UIViewController {
     }
     
     func fillMap() {
-        let arrayDrinkingFountains = self.json?["features"] as! NSArray
-        for fountain in arrayDrinkingFountains {
-            let fountainDictionary = fountain as! NSDictionary
-            
-            let propertyDictionary = fountainDictionary["properties"] as! NSDictionary
-            let name_title = propertyDictionary["NAME"] as! String
-            let in_operation = propertyDictionary["IN_OPERATION"] as? String
-            let location = propertyDictionary["LOCATION"] as? String
-            let subtitle = "\(location): \(in_operation)"
-            
-            let geometryDictionary = fountainDictionary["geometry"] as! NSDictionary
-            let coordinatesArr = geometryDictionary["coordinates"] as! [Double]
-            
-            let lat = 49.284789 + (Double(arc4random_uniform(100)) / 100.0)
-            let lon = -123.113677 + Double(arc4random_uniform(100)) / 100.0
-            
-            let coord = CLLocationCoordinate2DMake(lat, lon)
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = coord
-            annotation.title = name_title
-            annotation.subtitle = subtitle
-            
-            self.mapView.addAnnotation(annotation)
-        }
+        
     }
 
     override func didReceiveMemoryWarning() {
