@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblGyroscopeZ: UILabel!
     
     let motionManager = CMMotionManager()
-    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         
